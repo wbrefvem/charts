@@ -13,7 +13,9 @@ Master:
   Image: "jenkins/jenkins"
   ImageTag: "lts"
   ImagePullPolicy: "Always"
-# ImagePullSecret: jenkins
+# ImagePullSecret: master-jenkins-docker-cfg
+  DockerConfig: |-
+    {}
   Component: "jenkins-master"
   UseSecurity: true
   AdminUser: admin

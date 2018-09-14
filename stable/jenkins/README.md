@@ -34,7 +34,8 @@ The following tables list the configurable parameters of the Jenkins chart and t
 | `Master.Image`                    | Master image name                    | `jenkinsci/jenkins`                                                          |
 | `Master.ImageTag`                 | Master image tag                     | `lts`                                                                     |
 | `Master.ImagePullPolicy`          | Master image pull policy             | `Always`                                                                     |
-| `Master.ImagePullSecret`          | Master image pull secret             | Not set                                                                      |
+| `Master.ImagePullSecret`          | Master image pull secret             | `master-image-secret`                                                        |
+| `Master.DockerConfig   `          | Docker pull secret yml               | `{}`                                                        |
 | `Master.Component`                | k8s selector key                     | `jenkins-master`                                                             |
 | `Master.UseSecurity`              | Use basic security                   | `true`                                                                       |
 | `Master.AdminUser`                | Admin username (and password) created as a secret if useSecurity is true | `admin`                                  |
